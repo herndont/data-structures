@@ -2,12 +2,16 @@
 # Reverse an Array
 I paired with Michael Jahns on this challenge in class.
 
-We started in class by trying to figure out if it was possible to modify the array in place, like we had done with the
- previous lab. We found out that our initial plan was not going to work and that we would have to return the array with
-  a new array with the additional element and values added.
+
 
 This code challenge covered material that was still semi-fresh because it was very similar to one of the challenges in
-the lab from this afternoon. 
+the lab from this afternoon. We started out using a for loop to loop through the array and then identify whether or not
+the value match was available in the array. 
+
+
+Once I got home I realized that there was the wiki page for the challenge on binary searches and did some more research
+on these. I found this (https://www.javatpoint.com/binary-search-in-java) website, among others and used their code as
+ an example for my own purposes. 
 
 ### Challenge
 Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing 
@@ -30,6 +34,12 @@ Our approach was to use a for loop within the method to iterate over the array u
 indices were the same. Once the function found these to be equal it would return either the value that was previously
 provided or if the value was never found to match anything it would return -1.
 
+
+I also went ahead and tried to get some of the tests done and the stretch goals within the tests as well. I think that 
+I completed these correctly.
+
+
+The efficiency of this method would be log(n).
 
 ### Solution
 ####(White Board Solution)
