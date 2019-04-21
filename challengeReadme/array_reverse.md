@@ -7,10 +7,14 @@ The following information was found at http://www.java67.com/2016/10/3-ways-to-r
 Three ways to reverse an array in Java
 
 Solution 1 - Revere array in Place
+
+
 Solution 2 - Using ArrayList
+
+
 Solution 3 - By using ArrayUtils.reverse()
 
-Solution 1 is what I attempted to do in the challenge that I submitted.
+Chosen Solution: Solution 1 is what I attempted to do in the challenge that I submitted.
 
 ## Challenge
 The function should take an array and return the values within the array in reverse order. There are multiple arrays given in the test to plug and play and make sure that the function returns the values in reverse. Below are those sample arrays.
