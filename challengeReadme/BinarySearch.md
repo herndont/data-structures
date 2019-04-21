@@ -42,5 +42,5 @@ I completed these correctly.
 The efficiency of this method would be log(n).
 
 ### Solution
-####(White Board Solution)
+#### White Board Solution
 ![image](../assets/array_binary_search.jpg)

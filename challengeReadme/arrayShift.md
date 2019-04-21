@@ -13,5 +13,5 @@ Write a function called insertShiftArray which takes in an array and the value t
 My approach that worked differed from the initial plan and whiteboarding because we ended up iterating through the original array until we got to the halfway point. We did this by dividing the length of the array by 2 and then adding in the new element and value. Then we continued on using a new for loop for the final half of the array. Every indices we iterated over on the original array was set to equal the indices of the new array. Finally, we returned the new array for the final output.
 
 ### Solution
-####(White Board Solution)
+#### (White Board Solution)
 ![image](../assets/wbArrayShift.jpg)
