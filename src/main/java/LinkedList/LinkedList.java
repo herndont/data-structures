@@ -23,7 +23,6 @@ public class LinkedList<AnyType> {
 
 //    public boolean includes()
 
-        LinkedList list = new LinkedList();
 }
 
 

@@ -1,8 +1,8 @@
 package LinkedList;
 
 public class Node<AnyType> {
-    AnyType data;
-    Node<AnyType> next;
+    public AnyType data;
+    public Node<AnyType> next;
 
     public Node(AnyType data) {
         this.data = data;
