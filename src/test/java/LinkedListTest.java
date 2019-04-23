@@ -15,10 +15,49 @@ public class LinkedListTest {
     @Test
     public void insertTest() {
         // Arrange
-        LinkedList list = new LinkedList();
-        list.insert(new Node(15));
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(15);
+        list.insert(10);
+        list.insert(5);
+
+
         // Assert
-        Assert.assertEquals(, list.head.data);
+        Assert.assertEquals(15, list.head.data);
     }
+
+    @Test
+    public void truthyIncludes() {
+        //Arrange
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(15);
+        list.insert(16);
+        list.insert(17);
+
+        boolean expected = true;
+        boolean actual = list.includes(15);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void falsyIncludes() {
+        //arrange
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(15);
+        list.insert(16);
+        list.insert(17);
+
+        boolean expected = false;
+        boolean actual = list.includes(14);
+
+        Assert.assertEquals(expected, actual);
+    }
+
+//    @Test
+//    public void
+
+
+
+
 
 }
