@@ -52,11 +52,13 @@ public class LinkedListTest {
 
         Assert.assertEquals(expected, actual);
     }
-
+//    Still need the test for the printing the collection from lab05
 //    @Test
 //    public void
 
+//------------------ Everything below is from Challenge 06
 
+    // Need to write tests for Challenge 06
 
 
 
