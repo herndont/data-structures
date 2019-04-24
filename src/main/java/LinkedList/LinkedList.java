@@ -1,8 +1,8 @@
 package LinkedList;
 
-//The inspiration for this code came from studying GeeksforGeeks examples
-// at https://www.geeksforgeeks.org/linked-list-set-1-introduction/
+import org.omg.IOP.ExceptionDetailMessage;
 
+import java.sql.SQLOutput;
 
 public class LinkedList<T> {
     public Node head;
@@ -77,4 +77,37 @@ public class LinkedList<T> {
         }
         return false;
     }
+
+
+//    use `throw new IndexOutOfBoundsException();` in your LinkedList class
+//    Then for your test file use the below example
+//    try {
+//        list.findValue(5);
+//        assertTrue(false);
+//    } catch (IndexOutOfBoundsException e) {
+//        assertTrue(true);
+//    }
+
+    public T findValue(int k) throws Exception {
+        Node current = head;
+        T val = null;
+        for (int i = this.size()-k; i >= 0; i--) {
+            val = (T)current.data;
+        }
+            if (k > this.size() || k < 0) {
+                throw new Exception();
+            }
+        return val;
     }
+
+    private int size() {
+        int size = 0;
+        Node current = head;
+        while(current.next != null){
+            current = current.next;
+            size++;
+        }
+        return size;
+    }
+
+}
