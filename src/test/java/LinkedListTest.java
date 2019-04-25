@@ -154,15 +154,8 @@ public class LinkedListTest {
             list2.insert(12);
             list2.insert(18);
 
-            final Node actual = LinkedList.mergedLists(Node nodeA, Node nodeB);
-
-//        final int actual = BinarySearch.BinarySearch(10000, array1);
-
-
-        expected = ;
-        actual = ;
-
-        Assert.assertEquals();
+            final Node actual = LinkedList.mergedLists(list1.head, list2.head);
+            Assert.assertEquals(8, actual.data);
     }
 
 //    @Test

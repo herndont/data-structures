@@ -1,5 +1,5 @@
 
-# Linked List Merge
+# Merge Two Linked Lists
 I paired with Jess on this challenge in class.
 
     This challenge requires that you take two Linked Lists and merge them together in a zipper fashion similar to that
