@@ -1,6 +1,8 @@
 import LinkedList.LinkedList;
+import LinkedList.Node;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
 public class LinkedListTest {
 
@@ -124,18 +126,77 @@ public class LinkedListTest {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
-    public void happyPathTest() throws Exception{
-        LinkedList<Integer> list = new LinkedList<Integer>();
-        list.insert(15);
-        list.insert(16);
-        list.insert(17);
-        list.insert(18);
-        list.insert(19);
-        list.insert(20);
+//    @Test
+//    public void happyPathTest() throws Exception{
+//        LinkedList<Integer> list = new LinkedList<Integer>();
+//        list.insert(15);
+//        list.insert(16);
+//        list.insert(17);
+//        list.insert(18);
+//        list.insert(19);
+//        list.insert(20);
+//
+//        int expected = 18;
+//        int actual = list.findValue(2);
+//        Assert.assertEquals(expected, actual);
+//    }
 
-        int expected = 18;
-        int actual = list.findValue(2);
-        Assert.assertEquals(expected, actual);
+    //------------------------ Code Challenge 08 Tests
+
+    @Test
+    public void happyPathTest()  {
+        LinkedList<Integer> list1 = new LinkedList<Integer>();
+            list1.insert(10);
+            list1.insert(15);
+            list1.insert(20);
+        LinkedList<Integer> list2 = new LinkedList<Integer>();
+            list2.insert(8);
+            list2.insert(12);
+            list2.insert(18);
+
+            final Node actual = LinkedList.mergedLists(Node nodeA, Node nodeB);
+
+//        final int actual = BinarySearch.BinarySearch(10000, array1);
+
+
+        expected = ;
+        actual = ;
+
+        Assert.assertEquals();
     }
+
+//    @Test
+//    public void expectedFailureTest() {
+//        LinkedList<Integer> list1 = new LinkedList<Integer>();
+//            list1.insert(10);
+//            list1.insert(15);
+//            list1.insert(20);
+//        LinkedList<Integer> list2 = new LinkedList<Integer>();
+//            list2.insert(8);
+//            list2.insert(12);
+//            list2.insert(18);
+//
+//        expected = ;
+//        actual = ;
+//
+//        Assert.assertEquals();
+//    }
+//
+//    @Test
+//    public void edgeCaseTest() {
+//        LinkedList<Integer> list1 = new LinkedList<Integer>();
+//            list1.insert(10);
+//            list1.insert(15);
+//            list1.insert(20);
+//        LinkedList<Integer> list2 = new LinkedList<Integer>();
+//            list2.insert(8);
+//            list2.insert(12);
+//            list2.insert(18);
+//
+//        expected = ;
+//        actual = ;
+//
+//        Assert.assertEquals();
+//    }
+
 }
