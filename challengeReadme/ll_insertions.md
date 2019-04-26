@@ -1,6 +1,6 @@
 
-# Reverse an Array
-I paired with Nicole Dana on this challenge in class.
+# Linked List Insertions
+I paired with Dana on this challenge in class.
 
     This Code Challenge requires that user is able to find specific nodes within the LinkedList and then either insert new
     Nodes or insert new values into those nodes.

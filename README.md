@@ -12,6 +12,17 @@
 ### Code Challenge 03 (Binary-Search)
 [Binary-Search](/challengeReadme/BinarySearch.md)
 
+### Code Challenge 06 (Linked List Insertions)
+[linked-list insertions](/challengeReadme/ll_insertions.md)
+
+### Code Challenge 07 (Linked List kth from the end)
+[ll_kth_from_end](/challengeReadme/ll_kth_from_end.md)
+
+### Code Challenge 08 (Linked List Merge)
+[ll_merge](/challengeReadme/ll_merge.md) 
+
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
+
+
 
