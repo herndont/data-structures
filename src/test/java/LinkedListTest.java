@@ -1,46 +1,87 @@
 import LinkedList.LinkedList;
 import LinkedList.Node;
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.theories.suppliers.TestedOn;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 public class LinkedListTest {
+
+//-----------------Lab 05 Tests--------------------------
+
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+    private final PrintStream originalOut = System.out;
+    private final PrintStream originalErr = System.err;
+
+    @Before
+    public void setUpStreams() {
+        System.setOut(new PrintStream(outContent));
+        System.setErr(new PrintStream(errContent));
+    }
+
+    @After
+    public void restoreStreams() {
+        System.setOut(originalOut);
+        System.setErr(originalErr);
+    }
 
     @Test
     public void constructorTest() {
-        // Arrange
+        // Can successfully instantiate an empty linked list
         LinkedList list = new LinkedList();
             Assert.assertEquals(null, list.head);
     }
 
     @Test
     public void insertTest() {
-        // Arrange
+        // Can properly insert into the linked list
+//        Can properly insert multiple nodes into the linked list
+
         LinkedList<Integer> list = new LinkedList<Integer>();
         list.insert(15);
         list.insert(10);
         list.insert(5);
 
-
         // Assert
-        Assert.assertEquals(15, list.head.data);
+        Assert.assertEquals(5, list.head.data);
+        Assert.assertEquals(10, list.head.next.data);
+        Assert.assertEquals(15, list.head.next.next.data);
+    }
+
+    @Test
+    public void printTest() {
+//        Can properly return a collection of all the values that exist in the linked list
+
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(15);
+        list.insert(16);
+
+        list.print();
+        Assert.assertEquals("16, 15, ", outContent.toString());
     }
 
     @Test
     public void truthyIncludes() {
-        //Arrange
+//        Will return true when finding a value within the linked list that exists
+
         LinkedList<Integer> list = new LinkedList<Integer>();
         list.insert(15);
         list.insert(16);
         list.insert(17);
 
-        boolean expected = true;
-        boolean actual = list.includes(15);
-
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(true, list.includes(15));
+        Assert.assertEquals(true, list.includes(16));
+        Assert.assertEquals(true, list.includes(17));
     }
 
     @Test
+//    Will return false when searching for a value in the linked list that does not exist
+
     public void falsyIncludes() {
         //arrange
         LinkedList<Integer> list = new LinkedList<Integer>();
@@ -51,11 +92,12 @@ public class LinkedListTest {
         boolean expected = false;
         boolean actual = list.includes(14);
 
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(false, list.includes(14));
+        Assert.assertEquals(false, list.includes(118));
+        Assert.assertEquals(false, list.includes(18));
+
     }
-//    Still need the test for the printing the collection from lab05
-//    @Test
-//    public void
+
 
 //------------------ Everything below is from Challenge 06
 

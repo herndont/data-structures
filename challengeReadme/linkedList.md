@@ -2,8 +2,8 @@
 # Linked List
 
     This challenge is for the creation of a linked list. Up until this point we have been using arrays for everything
-    and now this challenge will utilize the list formatting. The user must be able to add node and navigate through the
-    list.
+    and now this challenge will utilize the list formatting. The user must be able to add nodes and navigate through the
+    list. 
 
 ### Challenge
     
@@ -22,9 +22,7 @@
     - Be sure to follow your language/frameworks standard naming conventions (e.g. C# uses PascalCasing for all method
      and class names).
 
-### Approach & Efficiency
-
-    Approach: This is no where near complete so this section will be updated once there is something to state.
+### Testing
     
     Efficiency: Write tests to prove the following functionality.
         - Can successfully instantiate an empty linked list
@@ -36,7 +34,11 @@
         -  Can properly return a collection of all the values that exist in the linked list
     * Ensure your tests are passing before you submit your solution.
       
-    BigO Space and Time:      
+
+    
+### Approach & Efficiency
+
+
 
 
 
