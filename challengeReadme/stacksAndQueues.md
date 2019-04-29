@@ -39,8 +39,28 @@
 
 
 ## Approach & Efficiency
+    
+    I approached this lab very similarly to that off the linkedList lab. The methods are not quite the same, but very
+    close and because of this, you can make small changes like that of the FILO vs LIFO in regards to where the nodes
+    get set up to begin with. This then also affected testing slightly.
 
 
 ## API
     Description of each methods publicly available to your Stack and Queue
+    
+    * Stack
+        * Push: The push method takes a new node and renames it to top, while also resetting the pointer to the old top.
+        * Pop: The pop method takes the top node off of the stack and returns its value. The node that was 2nd in line
+               then becomes the new top.
+        * Peek: The peek mothod return the value of the top node without popping it off of the top of the stack.
+
+    * Queue
+        * Enqueue: Takes a value and adds it as a new node to the back of the queue.  
+        * Dequeue: The method removes the node from the front of the queue and then returns the nodes value.
+        * Peek: The method just returns the value of the node located at the front of the queue while leaving all nodes
+          in place.
+ 
+ [Stack](../src/main/java/stacksandqueues/Stack.java)         
+ [Queue](../src/main/java/stacksandqueues/Queue.java)
+ 
 
