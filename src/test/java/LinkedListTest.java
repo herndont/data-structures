@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.theories.suppliers.TestedOn;
+import sun.misc.ASCIICaseInsensitiveComparator;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -54,6 +55,7 @@ public class LinkedListTest {
     }
 
     @Test
+//    --------------------------------This printTest is still not working-----------------------
     public void printTest() {
 //        Can properly return a collection of all the values that exist in the linked list
 
@@ -63,6 +65,14 @@ public class LinkedListTest {
 
         list.print();
         Assert.assertEquals("16, 15, ", outContent.toString());
+
+        list.insert(17);
+        list.print();
+        Assert.assertEquals("17, 16, 15, ", outContent.toString());
+
+        list.insert(18);
+        list.print();
+        Assert.assertEquals("18, 17, 16, 15, ", outContent.toString());
     }
 
     @Test
