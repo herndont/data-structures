@@ -12,6 +12,9 @@
 ### Code Challenge 03 (Binary-Search)
 [Binary-Search](/challengeReadme/BinarySearch.md)
 
+### Code Challenge 06 (Linked List Insertions)
+[Linked-List Insertions](/challengeReadme/ll_insertions.md)
+
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
 
