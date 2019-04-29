@@ -33,11 +33,17 @@ public class LinkedList<T> {
     }
 
     public void print() {
-        Node current = this.head;
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        Node<Integer> current = this.head;
         while (current != null) {
-            System.out.println(current.data);
+            list.insert(current.data);
+            System.out.print(current.data + ", ");
+            current = current.next;
         }
     }
+
+    // Lab 05 methods above
+    //Code Challenge 06 methods below
 
     public void append(int value) {
         Node current = this.head;
