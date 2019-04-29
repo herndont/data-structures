@@ -38,7 +38,23 @@
     
 ### Approach & Efficiency
 
+    It was pretty hard for me to understand the linked lists from the beginning. In theory, I understood how they
+    worked, but didn't understand the code associated with them. I looked online for examples and honestly became even
+    more confused because in every code example they were instantiating the linked list and not testing it. So I was
+    also trying to create the linked list outside of my test which became a problem. Now I am starting to understand
+    that the methods need to be plug and play dynamic and able to be taken from this lab and plugged into another
+    application if needed. Therefore, I stopped trying to initialize a linked list inside of my code and only did it
+    within the testing files.
 
-
+## API's 
+    (description of each method publicly available)
+    
+    * Insert: Insert adds a new node with pointer and value into the linked list. By doing this, we change the new head 
+      to equal the new node and also have the pointer point then to the old head.
+    * Includes: The includes method looks from one node and uses the pointer to travel all of the way through the entire
+      linked list until it gets to a null pointer value. Once it reaches a null pointer value, it knows it has reached
+      the end of the list and then returns a boolean whether or not the list inludes the data value which was entered.
+    * Print: Print will print the values of all of the node in the list. It works in similar fashion to the includes,
+      but instead of returning a boolean, it returns all of the linked list values in a string.
 
 
