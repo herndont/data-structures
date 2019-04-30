@@ -24,5 +24,5 @@
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
 
-
-
+### Stacks and Queues Lab 10
+[Stacks and Queues](/challengeReadme/stacksAndQueues.md)
