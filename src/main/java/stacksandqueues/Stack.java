@@ -27,4 +27,12 @@ public class Stack {
         }
         return this.top.data;
     }
+
+    public boolean isEmpty() {
+        if (top == null) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 }

@@ -1,5 +1,7 @@
 package QueueWithStacks;
 
+import stacksandqueues.Node;
+
 public class PseudoQueue {
 
     private Node top;

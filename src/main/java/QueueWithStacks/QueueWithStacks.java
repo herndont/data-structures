@@ -1,50 +1,82 @@
 package QueueWithStacks;
+import stacksandqueues.Stack;
 
-import java.util.Stack;
 
 public class QueueWithStacks {
-    Stack<Integer> S1 = new Stack<>();
-    Stack<Integer> S2 = new Stack<>();
-        public Node front;
-        public Node rear;
+    Stack S1 = new Stack();
+    Stack S2 = new Stack();
+    public int front;
+    public int rear;
 
-        public void enqueue(int value) {
-            if(S1 == null) {
-                if(S2 == null) {
-                    value.push;
-                }else if (S2 != null) {
-                    while(S2 != null) {
-                        next.value = front.next;
-                        S1.push(front);
-                        S2.pop(front);
-                        front = next.value;
+    public void enqueue(int value) {
+        if (S1.isEmpty()) {
+            if (S2.isEmpty()) {
+                S1.push(value);
+                front = value;
+                rear = value;
+            } else if (S2.isEmpty() == false) {
+                if(S2.peek() == rear) {
+                   S2.push(value);
+                   rear = value;
+                }else if (S2.peek() != rear) {
+                    while (S2.isEmpty() == false) {
+                        int temp = S2.pop();
+                        S1.push(temp);
                     }
                     S1.push(value);
-                }else if(S1 != null) {
-                    if(S1.peek == rear) {
-                        S1.push(value);
-                    }
+                    rear = value;
                 }
             }
+        }else if (S1.isEmpty() == false) {
+            if (S1.peek() == rear) {
+                S1.push(value);
+                rear = value;
+            }else if (S1.peek() != rear) {
+                while (S1.isEmpty() == false) {
+                    int temp = S1.pop();
+                    S2.push(temp);
+                }
+                S2.push(value);
+                rear = value;
+            }
         }
+    }
 
-        public void dequeue() {
-            if(S2 == null) {
-                if(S2 == null) {
-                    S2.pop(front);
-                }else if (S1 != null) {
-                    while(S1 != null) {
-                        next.value = rear.next;
-                        S2.push(rear);
-                        S1.pop(rear);
-                        rear = next.value;
+    public int dequeue() throws Exception {
+        if (S2.isEmpty()) {
+            if (S1.isEmpty()) {
+                System.out.println("There is nothing in either stack currently. Please go ahead and add something");
+                throw new Exception();
+            } else if (S1.isEmpty() == false) {
+                if(S1.peek() == front) {
+                    int value = S1.pop();
+                    front = S1.peek();
+                    return value;
+                }else if(S1.peek() != front) {
+                    while (S1.isEmpty() == false) {
+                        int value = S1.pop();
+                        S2.push(value);
                     }
-                    S2.push(value);
-                } else if(S2 != null) {
-                    if (S2.peek == front) {
-                        S2.push(value)
-                    }
+                    int value = S2.pop();
+                    front = S2.peek();
+                    return value;
                 }
             }
+        } else if (S2.isEmpty() == false) {
+            if (S2.peek() == front) {
+                int value = S2.pop();
+                front = S2.peek();
+                return value;
+            }else if (S2.peek() != front) {
+                while (S2.isEmpty() == false) {
+                    int value = S2.pop();
+                    S1.push(value);
+                }
+                int value = S1.pop();
+                front = S1.peek();
+                return value;
+            }
         }
+        return 0;
+    }
 }
