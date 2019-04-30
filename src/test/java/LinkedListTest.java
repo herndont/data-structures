@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.theories.suppliers.TestedOn;
 import sun.misc.ASCIICaseInsensitiveComparator;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -111,7 +110,82 @@ public class LinkedListTest {
 
 //------------------ Everything below is from Challenge 06
 
-    // Need to write tests for Challenge 06
+    @Test
+    public void appendTest() {
+
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(15);
+        list.insert(16);
+        list.append(17);
+
+        //        Can successfully add a node to the end of the linked list
+
+        Assert.assertEquals(17, list.head.next.next.data);
+
+        //Can successfully add multiple nodes to the end of a linked list
+
+        list.append(18);
+
+        Assert.assertEquals(18, list.head.next.next.next.data);
+
+        //Can successfully insert a node before a node located in the middle of a linked list
+
+        list.insertBefore(17, 5);
+
+        Assert.assertEquals(5, list.head.next.next.data);
+    }
+
+    @Test
+    public void beforeTest() {
+//        Can successfully insert a node before the first node of a linked list
+
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(15);
+        list.insert(16);
+
+        list.insertBefore(15, 5);
+        Assert.assertEquals(5, list.head.next.data);
+
+        list.insertBefore(5, 3);
+        Assert.assertEquals(3, list.head.next.data);
+
+        list.insertBefore(5, 2);
+        Assert.assertEquals(2, list.head.next.next.data);
+    }
+
+    @Test
+    public void afterTest() {
+//  Can successfully insert after a node in the middle of the linked list
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(15);
+        list.insert(16);
+
+        list.insertAfter(15, 5);
+        Assert.assertEquals(5, list.head.next.next.data);
+
+        list.insertAfter(16, 1);
+        Assert.assertEquals(1, list.head.next.data);
+
+        list.insertAfter(1, 8);
+        Assert.assertEquals(8, list.head.next.next.data);
+    }
+
+    @Test
+    public void afterLastTest(){
+//  Can successfully insert a node after the last node of the linked list
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        list.insert(15);
+        list.insert(16);
+
+        list.insertAfter(15, 1);
+        Assert.assertEquals(1, list.head.next.next.data);
+
+        list.insertAfter(1, 2);
+        Assert.assertEquals(2, list.head.next.next.next.data);
+
+        list.insertAfter(2, 3);
+        Assert.assertEquals(3, list.head.next.next.next.next.data);
+    }
 
 //------------------ Everything below is from Challenge 07
 
