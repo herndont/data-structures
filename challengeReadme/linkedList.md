@@ -2,8 +2,8 @@
 # Linked List
 
     This challenge is for the creation of a linked list. Up until this point we have been using arrays for everything
-    and now this challenge will utilize the list formatting. The user must be able to add node and navigate through the
-    list.
+    and now this challenge will utilize the list formatting. The user must be able to add nodes and navigate through the
+    list. 
 
 ### Challenge
     
@@ -22,9 +22,7 @@
     - Be sure to follow your language/frameworks standard naming conventions (e.g. C# uses PascalCasing for all method
      and class names).
 
-### Approach & Efficiency
-
-    Approach: This is no where near complete so this section will be updated once there is something to state.
+### Testing
     
     Efficiency: Write tests to prove the following functionality.
         - Can successfully instantiate an empty linked list
@@ -36,7 +34,27 @@
         -  Can properly return a collection of all the values that exist in the linked list
     * Ensure your tests are passing before you submit your solution.
       
-    BigO Space and Time:      
 
+    
+### Approach & Efficiency
+
+    It was pretty hard for me to understand the linked lists from the beginning. In theory, I understood how they
+    worked, but didn't understand the code associated with them. I looked online for examples and honestly became even
+    more confused because in every code example they were instantiating the linked list and not testing it. So I was
+    also trying to create the linked list outside of my test which became a problem. Now I am starting to understand
+    that the methods need to be plug and play dynamic and able to be taken from this lab and plugged into another
+    application if needed. Therefore, I stopped trying to initialize a linked list inside of my code and only did it
+    within the testing files.
+
+## API's 
+    (description of each method publicly available)
+    
+    * Insert: Insert adds a new node with pointer and value into the linked list. By doing this, we change the new head 
+      to equal the new node and also have the pointer point then to the old head.
+    * Includes: The includes method looks from one node and uses the pointer to travel all of the way through the entire
+      linked list until it gets to a null pointer value. Once it reaches a null pointer value, it knows it has reached
+      the end of the list and then returns a boolean whether or not the list inludes the data value which was entered.
+    * Print: Print will print the values of all of the node in the list. It works in similar fashion to the includes,
+      but instead of returning a boolean, it returns all of the linked list values in a string.
 
 

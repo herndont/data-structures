@@ -26,6 +26,3 @@
 
 ### Stacks and Queues Lab 10
 [Stacks and Queues](/challengeReadme/stacksAndQueues.md)
-
-
-
