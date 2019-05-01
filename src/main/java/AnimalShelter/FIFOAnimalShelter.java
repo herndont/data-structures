@@ -11,8 +11,7 @@ public class FIFOAnimalShelter {
         Node new_node = new Node(data);
         if (front == null) {
             front = new_node;
-        }
-        else {
+        } else {
             Node last = front;
             while (last.next != null) {
                 last = last.next;
@@ -27,6 +26,8 @@ public class FIFOAnimalShelter {
         }
         String value = front.data;
         front = front.next;
-        return value;
+        if (value == "dog" || value == "cat") {
+            return value;
+        } else return null;
     }
 }

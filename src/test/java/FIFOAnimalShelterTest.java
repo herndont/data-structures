@@ -51,6 +51,7 @@ public class FIFOAnimalShelterTest {
 
         FIFOAnimalShelter testQ = new FIFOAnimalShelter();
         testQ.enqueue("dog");
+        testQ.enqueue("monkey");
 
         Assert.assertEquals("dog", testQ.dequeue());
         Assert.assertEquals(null, testQ.dequeue());
