@@ -21,6 +21,9 @@
 ### Code Challenge 08 (Linked List Merge)
 [ll_merge](/challengeReadme/ll_merge.md) 
 
+### Code Challenge 11 (Queues With Stacks)
+[QueuesWithStacks](/challengeReadme/queueWithStacks.md)
+
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
 
