@@ -22,11 +22,12 @@ public class BinarySearchTree extends BinaryTree {
         root = add(root, data);
     }
 
+    //Define a method called contains
+
     public boolean contains(int data) {
         return treeContains(root, data);
     }
 
-    //Define a method called contains
     public boolean treeContains(Node root, int data) {
         if (root == null) {
             return false;

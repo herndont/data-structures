@@ -6,8 +6,9 @@
     the left and to the right below the parent and so on, creating a tree. The largest valued nodes are located to the 
     right side of the tree and the smallest valued nodes are located to the left side of the tree.
 
-    Information for this lab was used from the following link:
+    Information for this lab was used from the following links:
         https://www.baeldung.com/java-binary-tree
+        https://www.ius.edu.ba/sites/default/files/u1251/6._tree-traversals.pdf
 
 ### Challenge
     
@@ -46,3 +47,14 @@ The approach that I took was reading online to do some more understanding of the
 methods. 
 
 ### API's 
+
+preOrder: root, left, right is the order in which the tree is traversed and returns the root data value when its is hit.
+postOrder: left, right, root is the order in which the tree is traversed and returns the root data value when its is hit.
+inOrder: left, root, right is the order in which the tree is traversed and returns the root data value when its is hit.
+add: will add another node/leaf from the current location/leaf
+addFromRoot: adds a new node/leaf from the root out
+contains: determines whether a data value is present within the tree and returns a boolean value in response.
+treeContains: navigates through the tree to find the data value and returns a boolean value in response.
+
+ [Trees](../src/main/java/Tree/BinarySearchTree.java)
+ [Trees](../src/main/java/Tree/BinaryTree.java)
