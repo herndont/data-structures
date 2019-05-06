@@ -24,6 +24,9 @@
 ### Code Challenge 11 (Queues With Stacks)
 [QueuesWithStacks](/challengeReadme/queueWithStacks.md)
 
+### Code Challenge 11 (FIFO Animal Shelter)
+[FIFOAnimalShelter](/challengeReadme/fifo_animal_shelter.md)
+
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
 
