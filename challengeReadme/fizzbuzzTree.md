@@ -1,60 +1,51 @@
 
 # Implement a Binary Tree and a BST
-### Lab 15
+### Lab 16
+    This challenge was harder for me than expected. I had a hard time finding any reference online to traversing a tree
+    that wasn't binary. I know that a lot of this material was covered in class, but it was completed in pseudo code on
+    the white board that wasn't in front of the camera that was recording. 
+    
+    I knew that the Node class was going to be different because there would need to be the potential for multiple child 
+    node available to one parent and therefore, preOrder, postOrder, and inOrder methods that were utilized the previous
+    day would no longer work because they were meant for binary trees. That is why I decided to use the breadth first 
+    traversal method or BFT. This method spreads out accross the trees level and touches every single node within the
+    tree, therefore allowing me to change the values of those nodes.
 
-    This challenge is for the creation and navigation of a Binary tree. Leaf nodes have two child leaf nodes attached to
-    the left and to the right below the parent and so on, creating a tree. The largest valued nodes are located to the 
-    right side of the tree and the smallest valued nodes are located to the left side of the tree.
-
-    Information for this lab was used from the following links:
-        https://www.baeldung.com/java-binary-tree
-        https://www.ius.edu.ba/sites/default/files/u1251/6._tree-traversals.pdf
 
 ### Challenge
-    
-    - Create a Node class that has properties for the value stored in the node, the left child node, and the right child
-     node.
-    - Create a Tree class:
-      - Define a method for each of the depth first traversals called `preOrder`, `inOrder`, and `postOrder` which returns
-        an array of the values, ordered appropriately.
-    - At no time should an exception or stack trace be shown to the end user. Catch and handle any such exceptions and 
-      return a printed value or operation which cleanly represents the state and either stops execution cleanly, or 
-      provides the user with clear direction and output.
-    - Create a BinarySearchTree class:
-      - Define a method named add that accepts a value, and adds a new node with that value in the correct location in 
-        the binary search tree.
-      - Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value 
-        is in the tree at least once.
-      
+    - Write a function called `FizzBuzzTree` which takes a tree as an argument.
+    - Without utilizing any of the built-in methods available to your language, determine weather or not the value of 
+      each node is divisible by 3, 5 or both, and change the value of each of the nodes:
+        - If the value is divisible by 3, replace the value with `“Fizz”`
+        - If the value is divisible by 5, replace the value with `“Buzz”`
+        - If the value is divisible by 3 and 5, replace the value with `“FizzBuzz”`
+    - Return the tree with its new values.
+    - For explicitly-typed languages: Ensure your node values are of type Object, to hold either strings or integers.
+
+
+
 
 ### Testing
+
+    - “Happy Path” - Expected outcome
+    - Expected failure
+    - Edge Case (if applicable/obvious)
     
-    - Can successfully instantiate an empty tree
-    - Can successfully instantiate a tree with a single root node
-    - Can successfully add a left child and right child to a single root node
-    - Can successfully return a collection from a preorder traversal
-    - Can successfully return a collection from an inorder traversal
-    - Can successfully return a collection from a postorder traversal
-    
+   
 ### Approach & Efficiency
 
-contains method: O log(n) most cases and worst case O(n)
-preOrder method: O(n) 
-postOrder: O(n)
-inOrder: O(n)
+FizzBuzzTree Method: O(n)<sup>2</sup> because of the while loop and the for loop nested.
 
-The approach that I took was reading online to do some more understanding of the binary search tree and the traversal
-methods. 
+My approach was to go online and look up some examples of traversing a tree that was non-binary and then using those 
+examples to traverse through th tree touching all nodes within and hopefully changing their value.
 
-### API's 
+### Solution
 
-preOrder: root, left, right is the order in which the tree is traversed and returns the root data value when its is hit.
-postOrder: left, right, root is the order in which the tree is traversed and returns the root data value when its is hit.
-inOrder: left, root, right is the order in which the tree is traversed and returns the root data value when its is hit.
-add: will add another node/leaf from the current location/leaf
-addFromRoot: adds a new node/leaf from the root out
-contains: determines whether a data value is present within the tree and returns a boolean value in response.
-treeContains: navigates through the tree to find the data value and returns a boolean value in response.
+![white board](../assets/fizzBuzzTree.jpg)
 
- [Trees](../src/main/java/Tree/BinarySearchTree.java)
- [Trees](../src/main/java/Tree/BinaryTree.java)
+
+ [FizzBuzzTree Node](../src/main/java/FizzBuzzTree/Node.java)
+ 
+ 
+ [FizzBuzzTree Code](../src/main/java/FizzBuzzTree/FizzBuzzTree.java)
+

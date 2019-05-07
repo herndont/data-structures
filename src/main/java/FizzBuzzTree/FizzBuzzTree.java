@@ -18,9 +18,9 @@ public class FizzBuzzTree {
             }
             if (((int)poppedNode.data % 3) == 0) {
                 poppedNode.data = ("Fizz");
-            } else if (((int)poppedNode.data % 5) == 0) {
+            } if (((int)poppedNode.data % 5) == 0) {
                 poppedNode.data = ("Buzz");
-            } else {
+            } if (((int)poppedNode.data % 3 & (int)poppedNode.data % 5) == 0){
                 poppedNode.data = ("FizzBuzz");
             }
         }
