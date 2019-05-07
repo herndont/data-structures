@@ -30,6 +30,9 @@
 ### Code Challenge 13 (Multiple Bracket Validation)
 [multiBracketValidation](/challengeReadme/multiBracketValidation.md)
 
+### Code Challenge 16 (FizzBuzz Tree)
+[FizzBuzz Tree](/challengeReadme/fizzbuzzTree.md)
+
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
 
