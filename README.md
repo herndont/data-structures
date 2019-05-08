@@ -33,6 +33,9 @@
 ### Code Challenge 16 (FizzBuzz Tree)
 [FizzBuzz Tree](/challengeReadme/fizzbuzzTree.md)
 
+### Code Challenge 17 (Breadth First Traversal)
+[Breadth First](/challengeReadme/breadth-first.md)
+
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
 
