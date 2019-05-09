@@ -1,6 +1,6 @@
 
 # Breadth First Traversal of Tree
-### Lab 16
+### Challenge 17
     - This lab is going to be solved very similarly to how I solved the FizzBuzzTree Challenge. If you would like to see
      that example as well please go to that readme and check out the white board and solution code. Instead of changing
      the values though I will need to print them to the console. The good part is that this method can be used for both 
@@ -23,10 +23,8 @@
    
 ### Approach & Efficiency
 
-FizzBuzzTree Method: O(n)<sup>2</sup> because of the while loop and the for loop nested.
+    Breadth First Method: O(n)<sup>2</sup> because of the while loop and the for loop nested.
 
-My approach was to go online and look up some examples of traversing a tree that was non-binary and then using those 
-examples to traverse through th tree touching all nodes within and hopefully changing their value.
 
 ### Solution
 
