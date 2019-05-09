@@ -1,10 +1,9 @@
 package Tree;
 
-import stacksandqueues.Queue;
-
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public abstract class BinaryTree {
     public Node root;
@@ -36,6 +35,21 @@ public abstract class BinaryTree {
             inorder.add(node.data);
             System.out.println(node.data);
             inOrder(node.right, inorder);
+        }
+    }
+
+    public void breadthFirst(Node root) {
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        while (queue.isEmpty()) {
+            Node poppedNode = queue.remove();
+            System.out.println(" " + poppedNode.data);
+            if (poppedNode.left != null) {
+                queue.add(poppedNode.left);
+            }
+            if (poppedNode.right != null) {
+                queue.add(poppedNode.right);
+            }
         }
     }
 }
