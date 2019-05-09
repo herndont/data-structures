@@ -35,3 +35,6 @@
 
 ### Stacks and Queues Lab 10
 [Stacks and Queues](/challengeReadme/stacksAndQueues.md)
+
+### Implement a Binary Tree and a BST Lab 15
+[treeAndBST](/challengeReadme/treeAndBST.md)
