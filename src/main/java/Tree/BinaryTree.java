@@ -4,6 +4,7 @@ import java.sql.Array;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public abstract class BinaryTree {
     public Node root;
@@ -52,4 +53,19 @@ public abstract class BinaryTree {
             }
         }
     }
+
+    public int findMax (Node root) {
+        int maxVal;
+        Queue<Node> queue = new LinkedList<>();
+        Node currentNode = root;
+        while (!queue.isEmpty() || currentNode !=null) {
+            if (currentNode != null) {
+                queue.add(currentNode);
+                currentNode = currentNode.left;
+
+            }
+            else {
+                currentNode = queue.remove();
+            }
+        }
 }
