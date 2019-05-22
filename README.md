@@ -49,5 +49,5 @@
 
 ## Challenge Lectures
 
-### Merge Sort Lab 27
+### Merge Sort Challenge 27
 [mergeSort](/challengeReadme/merge_sort_algorithm)
