@@ -36,6 +36,8 @@
 ### Code Challenge 17 (Breadth First Traversal)
 [Breadth First](/challengeReadme/breadth-first.md)
 
+## Chellenge Labs
+
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
 
@@ -44,3 +46,8 @@
 
 ### Implement a Binary Tree and a BST Lab 15
 [treeAndBST](/challengeReadme/treeAndBST.md)
+
+## Challenge Lectures
+
+### Merge Sort Challenge 27
+[mergeSort](/challengeReadme/merge_sort_algorithm)
