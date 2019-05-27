@@ -51,3 +51,6 @@
 
 ### Merge Sort Challenge 27
 [mergeSort](/challengeReadme/merge_sort_algorithm)
+
+### Quick Sort Challenge 28
+[quickSort](/challengeReadme/quickSort)
