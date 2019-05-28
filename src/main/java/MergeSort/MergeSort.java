@@ -20,7 +20,7 @@ public class MergeSort {
         mergeSort(l, mid);
         mergeSort(r, n-mid);
 
-        merge(a, l, r, mid, n -mid);
+//        merge(a, l, r, mid, n -mid);
     }
 
     public static void merge(){

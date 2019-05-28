@@ -54,18 +54,19 @@ public abstract class BinaryTree {
         }
     }
 
-    public int findMax (Node root) {
+    public int findMax(Node root) {
         int maxVal;
         Queue<Node> queue = new LinkedList<>();
         Node currentNode = root;
-        while (!queue.isEmpty() || currentNode !=null) {
+        while (!queue.isEmpty() || currentNode != null) {
             if (currentNode != null) {
                 queue.add(currentNode);
                 currentNode = currentNode.left;
 
-            }
-            else {
+            } else {
                 currentNode = queue.remove();
             }
         }
+        return 0;
+    }
 }
