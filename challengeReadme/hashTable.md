@@ -28,9 +28,15 @@
             https://www.geeksforgeeks.org/hashtable-put-method-in-java/
             https://www.geeksforgeeks.org/hashtable-in-java/
 
-### Solution
+### API
 
-![white board]()
+Add method: Takes in a key and value pair and adds them to the Table. More logic around collisions needs to be added.
+Get method: Takes in a key and returns the value associated with that specific key.
+Contains method: Takes in a key and returns a boolean whether or not it is in the table
+Hash method: Take in a key and modulas the key by the size of the table. This then gives you back the index.
+
  
  
- [FizzBuzzTree Code](../src/main/java/HashTable/HashTable.java)
+ [Hash Table Code](../src/main/java/HashTable/HashTable.java)
+ 
+  [Hash Table Tests](../src/test/java/HashTableTest.java)
