@@ -47,10 +47,13 @@
 ### Implement a Binary Tree and a BST Lab 15
 [treeAndBST](/challengeReadme/treeAndBST.md)
 
+### Hash Table
+[hashTable](/challengeReadme/hashTable.md)
+
 ## Challenge Lectures
 
 ### Merge Sort Challenge 27
-[mergeSort](/challengeReadme/merge_sort_algorithm)
+[mergeSort](/challengeReadme/merge_sort_algorithm.md)
 
 ### Quick Sort Challenge 28
-[quickSort](/challengeReadme/quickSort)
+[quickSort](/challengeReadme/quickSort.md)
