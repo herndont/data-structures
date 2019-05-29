@@ -39,6 +39,9 @@
 ### Code Challenge 31
 [Repeat Words](/challengeReadme/repeatedWord.md)
 
+### Code Challenge 32
+[Tree Intersection](/challengeReadme/treeIntersection.md)
+
 ## Challenge Labs
 
 ### Linked List Lab 05
