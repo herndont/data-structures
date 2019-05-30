@@ -24,4 +24,4 @@ Example:
 [Code Solution](/src/main/java/TreeIntersection/TreeIntersection.java)
 
 
-![Whiteboard Image](../assets/repeatWord.jpg)
+![Whiteboard Image]()

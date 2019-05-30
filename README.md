@@ -42,6 +42,10 @@
 ### Code Challenge 32
 [Tree Intersection](/challengeReadme/treeIntersection.md)
 
+### Code Challenge 33
+[Left Join](/challengeReadme/leftJoin.md)
+
+
 ## Challenge Labs
 
 ### Linked List Lab 05
