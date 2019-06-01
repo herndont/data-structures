@@ -36,7 +36,17 @@
 ### Code Challenge 17 (Breadth First Traversal)
 [Breadth First](/challengeReadme/breadth-first.md)
 
-## Chellenge Labs
+### Code Challenge 31
+[Repeat Words](/challengeReadme/repeatedWord.md)
+
+### Code Challenge 32
+[Tree Intersection](/challengeReadme/treeIntersection.md)
+
+### Code Challenge 33
+[Left Join](/challengeReadme/leftJoin.md)
+
+
+## Challenge Labs
 
 ### Linked List Lab 05
 [linked-List](/challengeReadme/linkedList.md)
