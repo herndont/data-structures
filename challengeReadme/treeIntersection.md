@@ -23,5 +23,7 @@ Example:
 ### Solution
 [Code Solution](/src/main/java/TreeIntersection/TreeIntersection.java)
 
+[Code Tests](/src/test/java/TreeIntersectionTest.java)
+
 
 ![Whiteboard Image]()

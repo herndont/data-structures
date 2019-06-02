@@ -1,5 +1,6 @@
 import MergeSort.MergeSort;
 import com.sun.scenario.effect.Merge;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -15,5 +16,7 @@ public class MergeSortTest {
         Arrays.sort(in);
 
         assertArrayEquals(in, out);
+        Assert.assertNotNull(out);
+        Assert.assertEquals(6, out.length);
     }
 }

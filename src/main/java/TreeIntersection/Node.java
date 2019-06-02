@@ -1,12 +1,12 @@
 package TreeIntersection;
 
 public class Node {
-    public int data;
+    public int key;
     public Node left;
     public Node right;
 
-        public Node(int data) {
-            this.data = data;
+        public Node(int key) {
+            this.key = key;
             this.left = null;
             this.right = null;
         }
