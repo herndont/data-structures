@@ -3,7 +3,7 @@ package QuickSort;
 //instruction taken from GforG
 public class QuickSort {
 
-    int partitionSort(int array[], int low, int high) {
+    private static int partitionSort(int array[], int low, int high) {
         int pivot = array[high];
         int i = (low - 1);
         for (int j = low; j < high; j++) {
@@ -21,7 +21,7 @@ public class QuickSort {
         return i+1;
     }
 
-    void sort(int array[], int low, int high) {
+    public static void sort(int array[], int low, int high) {
         if (low < high) {
             int pi = partitionSort(array, low, high);
 
