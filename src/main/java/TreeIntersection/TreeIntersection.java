@@ -3,6 +3,7 @@ package TreeIntersection;
 import java.util.ArrayList;
 import java.util.Stack;
 
+//inspiration taken from Geeks for Geeks and cloudKaksha which are quoted in the readme
 public class TreeIntersection {
 
     public static ArrayList printCommon(Node root1, Node root2) {
