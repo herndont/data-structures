@@ -41,6 +41,4 @@
 ### Solution
 [Code Solution](/src/main/java/Graph/Graph.java)
 
-**********************************************************
-[Code Tests](/src/test/java/TreeIntersectionTest.java)
-**********************************************************
+[Code Tests](/src/test/java/GraphTest.java)
