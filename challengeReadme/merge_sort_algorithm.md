@@ -34,10 +34,7 @@
 ![Diamgram2](../assets/mergeSort2.PNG)
 [source](https://www.baeldung.com/java-merge-sort)
 
-**********************************************
-//Put my WhiteBoard here
-
-## Algorithm
+## Algorithm & Pseudocode
 
  InsertionSort(int[] arr)
   
@@ -52,9 +49,6 @@
         
       arr[j + 1] <-- temp
 
-## Pseudocode
-
-*******************************************
 
 ## Readings and References
 

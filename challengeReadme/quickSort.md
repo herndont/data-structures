@@ -1,4 +1,4 @@
-# Code Challenge 27 (Lecture Merge Sort Algorithm)
+# Code Challenge 28 (Lecture Quick Sort Algorithm)
 
     - Quick Sort is similar to merge sort in that it also divides that data and then sorts it out. There are many
       ways to implement Quick Sort and below are a few of the methods. In each of them, a specific element is picked
@@ -35,14 +35,9 @@
 ![Diamgram2](../assets/quickSort2.PNG)
 [source](https://www.geeksforgeeks.org/quick-sort/)
 
-**********************************************
-//Put my WhiteBoard here
 
-## Algorithm
 
-***********************************************  
-
-## Pseudocode
+## Pseudocode & Algorithm
 
 *There was no pseudo code provided as specified in the instructions*
 
