@@ -45,6 +45,9 @@
 ### Code Challenge 33
 [Left Join](/challengeReadme/leftJoin.md)
 
+### Code Challenge 36
+[Beradth First Search Graph](/challengeReadme/breadth-first.md)
+
 
 ## Challenge Labs
 
