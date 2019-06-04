@@ -60,6 +60,9 @@
 ### Hash Table
 [hashTable](/challengeReadme/hashTable.md)
 
+### Graph Lab 35
+[graph](/challengeReadme/graph.md)
+
 ## Challenge Lectures
 
 ### Merge Sort Challenge 27
