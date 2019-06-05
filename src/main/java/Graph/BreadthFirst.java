@@ -7,14 +7,14 @@ import java.util.Queue;
 public class BreadthFirst extends Graph {
     Queue<Vertex> queue = new LinkedList<>();
 
-    public void bfs(Vertex root) {
-        queue.add(root);
-        root.visited = true;
-        while (!queue.isEmpty()) {
-            Vertex element = queue.remove();
-            System.out.println(element.label + "\t");
-            List<Vertex> neightbors = element.getNeighbors;
-        }
+//    public void bfs(Vertex root) {
+//        queue.add(root);
+//        root.visited = true;
+//        while (!queue.isEmpty()) {
+//            Vertex element = queue.remove();
+//            System.out.println(element.label + "\t");
+//            List<Vertex> neightbors = element.getNeighbors;
+//        }
 //        Queue<Vertex> queue = new LinkedList<>();
 //        if (root == null) {
 //            System.out.println("there is nothing in the graph");
