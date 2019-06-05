@@ -48,6 +48,9 @@
 ### Code Challenge 36
 [Beradth First Search Graph](/challengeReadme/breadth-first.md)
 
+### Code Challenge 37
+[Get Edges](/challengeReadme/getEdge.md)
+
 
 ## Challenge Labs
 
