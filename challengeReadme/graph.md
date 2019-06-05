@@ -1,4 +1,4 @@
-# Tree Intersection
+# Graph
 ## Code Challenge 32
 
 ### Challenge Description
