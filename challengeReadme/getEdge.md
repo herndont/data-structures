@@ -26,4 +26,4 @@
 ### Solution
 [Code Solution](/src/main/java/Graph/GetEdge.java)
 
-[Code Tests](/src/test/java/)
+[Code Tests](/src/test/java/GraphTest.java)
