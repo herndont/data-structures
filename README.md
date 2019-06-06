@@ -46,10 +46,13 @@
 [Left Join](/challengeReadme/leftJoin.md)
 
 ### Code Challenge 36
-[Beradth First Search Graph](/challengeReadme/breadth-first.md)
+[Breadth First Search Graph](/challengeReadme/breadth-first.md)
 
 ### Code Challenge 37
 [Get Edges](/challengeReadme/getEdge.md)
+
+### Code Challenge 38
+[Depth First Search Graph](/challengeReadme/depthFirstGraph.md)
 
 
 ## Challenge Labs
