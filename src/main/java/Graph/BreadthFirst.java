@@ -1,31 +1,21 @@
 package Graph;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class BreadthFirst extends Graph {
-    Queue<Vertex> queue = new LinkedList<>();
 
-//    public void bfs(Vertex root) {
-//        queue.add(root);
-//        root.visited = true;
-//        while (!queue.isEmpty()) {
-//            Vertex element = queue.remove();
-//            System.out.println(element.label + "\t");
-//            List<Vertex> neightbors = element.getNeighbors;
-//        }
-//        Queue<Vertex> queue = new LinkedList<>();
-//        if (root == null) {
-//            System.out.println("there is nothing in the graph");
-//            return;
-//        } queue.add(root);
-//
-//        while(!queue.isEmpty()) {
-//            Vertex poppedVertex = queue.remove();
-//            System.out.println(" " + poppedVertex.label);
-//            if (poppedVertex.)
-//        }
+    Set<String> breadthFirstTraversal(Graph graph, String root) {
+        Set<String> visited = new LinkedHashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            String vertex = queue.poll();
+            for (Vertex v : graph.getNeighbors(vertex)) {
+                if (!visited.contains(v.label)) {
+                    visited.add(v.label);
+                }
+            }
+        }
+        return visited;
     }
-
 }

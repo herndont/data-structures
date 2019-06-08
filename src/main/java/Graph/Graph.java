@@ -18,22 +18,6 @@ public class Graph {
         adjVertices.get(v2).add(v1);
     }
 
-//    using depthFirst traversal to return a list of all of the Nodes on the graph
-    public Set<String> getNodesDepthFirst(Graph graph, String root) {
-        Set<String> visited = new LinkedHashSet<>();
-        Stack<String> stack = new Stack<>();
-        stack.push(root);
-        while (!stack.isEmpty()) {
-            String vertex = stack.pop();
-            if (!visited.contains(vertex)) {
-                visited.add(vertex);
-                for (Vertex v : graph.getNeighbors(vertex)) {
-                    stack.push(v.label);
-                }
-            }
-        }
-        return visited;
-    }
 
 //    utilizing the HashSet named visited from the method above, return the number of vertices within the graph
     public int size(Graph graph, String root) {
