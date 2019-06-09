@@ -2,17 +2,17 @@ package Graph;
 
 import java.util.*;
 
-public class BreadthFirst extends Graph {
+public class BreadthFirst {
 
-    Set<String> breadthFirstTraversal(Graph graph, String root) {
-        Set<String> visited = new LinkedHashSet<>();
-        Queue<String> queue = new LinkedList<>();
+    public Set<Vertex> breadthFirstTraversal(Graph graph, Vertex root) {
+        Set<Vertex> visited = new LinkedHashSet<>();
+        Queue<Vertex> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
-            String vertex = queue.poll();
+            Vertex vertex = queue.poll();
             for (Vertex v : graph.getNeighbors(vertex)) {
-                if (!visited.contains(v.label)) {
-                    visited.add(v.label);
+                if (!visited.contains(vertex)) {
+                    visited.add(v);
                 }
             }
         }

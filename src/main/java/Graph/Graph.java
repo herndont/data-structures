@@ -3,33 +3,38 @@ package Graph;
 import java.util.*;
 
 public class Graph {
+
     private Map<Vertex, List<Vertex>> adjVertices;
 
+    public Graph() {
+        this.adjVertices = new HashMap<Vertex, List<Vertex>>();
+    }
+
 //  Adding a vertex *********** Need to figure out logic for adding values on top of the same Vertex
-    public void addVertex(String label) {
-        adjVertices.putIfAbsent(new Vertex(label), new ArrayList<>());
+    public void addVertex(Vertex label) {
+        adjVertices.putIfAbsent(label, new ArrayList<>());
     }
 
 //  Adding edge between Vertices
-    public void addEdge(String label1, String label2) {
-        Vertex v1 = new Vertex(label1);
-        Vertex v2 = new Vertex(label2);
+    public void addEdge(Vertex label1, Vertex label2) {
+        Vertex v1 = label1;
+        Vertex v2 = label2;
         adjVertices.get(v1).add(v2);
         adjVertices.get(v2).add(v1);
     }
 
 
 //    utilizing the HashSet named visited from the method above, return the number of vertices within the graph
-    public int size(Graph graph, String root) {
-        Set<String> visited = new LinkedHashSet<>();
-        Stack<String> stack = new Stack<>();
+    public int size(Graph graph, Vertex root) {
+        Set<Vertex> visited = new LinkedHashSet<>();
+        Stack<Vertex> stack = new Stack<>();
         stack.push(root);
         while (!stack.isEmpty()) {
-            String vertex = stack.pop();
+            Vertex vertex = stack.pop();
             if (!visited.contains(vertex)) {
                 visited.add(vertex);
                 for (Vertex v : graph.getNeighbors(vertex)) {
-                    stack.push(v.label);
+                    stack.push(v);
                 }
             }
         }
@@ -42,7 +47,7 @@ public class Graph {
 
 //    Returns all of the Nodes that are neighbors of the current or selected Node
 //    meaning that it returns those Nodes that have edges connecting them
-    public List<Vertex> getNeighbors(String label) {
-        return adjVertices.get(new Vertex(label));
+    public List<Vertex> getNeighbors(Vertex label) {
+        return adjVertices.get (label);
     }
 }

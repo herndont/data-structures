@@ -15,6 +15,9 @@
 ### Visual 
 ![Route Map](../assets/depthFirstGraph.png)
 
+###White Board Solution
+![White Board](../assets/depthFirstGraphWB.jpg)
+
 ### Solution
 [Code Solution](/src/main/java/Graph/DepthFirst.java)
 
