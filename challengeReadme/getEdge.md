@@ -23,6 +23,9 @@
 ### Visual 
 ![Route Map](../assets/getEdge.png)
 
+###White Board Solution
+[White Board Solution](../assets/getEdgeGraph.png)
+
 ### Solution
 [Code Solution](/src/main/java/Graph/GetEdge.java)
 

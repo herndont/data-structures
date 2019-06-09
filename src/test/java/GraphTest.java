@@ -65,7 +65,7 @@ public class GraphTest {
         Set<Vertex> bFT = breadthFirst.breadthFirstTraversal(graph, v3);
 
         Assert.assertEquals(true, bFT.contains(v1));
-        
+
     }
 
 
