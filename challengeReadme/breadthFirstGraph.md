@@ -17,6 +17,9 @@
         - https://www.geeksforgeeks.org/graph-and-its-representations/
         
         
+###White Board
+
+![White Board Solution](../assets/breadthFirstgraph.jpg)
 ### Solution
 [Code Solution](/src/main/java/Graph/BreadthFirst.java)
 
